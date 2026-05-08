@@ -1,0 +1,112 @@
+<doctype html>
+<html>
+<head>
+<title>Table</title>
+<head>
+<meta name="viewport"content="width="device-width,initial-scale,1.0">
+<style>
+body
+{
+background:#fffff0;
+}
+header
+{
+background:#00072d;
+color:white;
+font-size:30px;
+text-align:center;
+height:60px;
+padding-top:10px;
+box-sizing:border-box;
+}
+section tr
+{
+text-align:center;
+background:#f3f3f3
+}
+section table
+{
+margin:auto;
+margin-top:50px;
+}
+h4
+{
+text-align:center;
+}
+h6
+{
+text-align:center;
+margin-top:50px;
+}
+@media only screen and (max-width:600px)
+{
+body
+{
+//background:white;
+}
+header
+{
+font-size:18px;
+height:40px;
+}
+th, td
+{
+padding:4px;
+}
+h4
+{
+font-size:13px;
+}
+}
+</style>
+<header>
+Table in Html
+</header>
+<body>
+
+<main>
+<section>
+<table border="2" cellpadding="13" cellspacing="4">
+<caption style="font-size:25px">Student Marks</caption>
+<tr>
+<th colspan="7">Burari Public School</th>
+</tr>
+<tr>
+<th rowspan="2">Roll No</th><th rowspan="2">Student Name</th><th colspan="5">Subject</th>
+</tr>
+<tr>
+<td >Hindi</td><td>English</td><td>Maths</td><td>Science</td><td>Computer</td>
+</tr>
+<tr>
+<td>1</td><td>Pankaj</td><td >90</td><td>85</td><td>65</td><td>68</td><td>85</td>
+</tr>
+<tr>
+<td>2</td><td>Karan</td><td >82</td><td>85</td><td>91</td><td>89</td><td>80</td>
+</tr>
+<tr>
+<td>3</td><td>Dinesh</td><td >55</td><td>70</td><td>60</td><td style="background-color:red">45</td><td>69</td>
+</tr>
+<tr>
+<td>4</td><td>Yuvraj</td><td >89</td><td>68</td><td>71</td><td>63</td><td>88</td>
+</tr>
+<tr>
+<td>5</td><td>Kunal</td><td >93</td><td style="background-color:red" >45</td style="background-color:red"><td style="background-color:red">49</td><td style="background-color:red">49</td><td>87</td>
+</tr>
+
+</table>
+</section>
+</main>
+<h4>
+Note:
+<p><u >All the Students which marks is below than 50 in any subject need to improve in that subject.</u>
+</p>
+</h4>  
+<h6>
+<a href="practice.html">
+<img src="images/back.png" width="30px">
+</h6>
+
+<footer>
+</footer>
+</body>
+</html>

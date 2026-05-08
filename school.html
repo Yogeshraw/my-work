@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<title> web photo gallery </title>
+</head>
+<meta name="viewport"content="width=device-width,initial-scale=1.
+0">
+<style>
+@keyframes zoomout 
+{
+from{transform:scale(3);}
+to{transform:scale(1);}
+} 
+header
+{
+text-align: center;
+}
+body
+{
+background:grey;
+background-image:url(images/texture.jpg);
+
+}
+.picstyle 
+{
+width:51%;
+height:660px;
+margin:360px;
+margin-top:35px;
+//box-shadow:5px 5px 10px white;
+border-radius:20px;
+transition:1s easy-out;
+}
+main
+{
+animation:zoomout 1.50s ;
+}
+@media only screen and (max-width:600px)
+{
+body
+{
+//background:red;
+}
+.picstyle
+{
+width:70%;
+height:350px;
+margin:auto;
+padding:50px;
+margin-left:35px;
+border-radius:20px;
+}
+}
+@media only screen and (min-width:600px)
+{
+body{
+//background:green;
+}
+.picstyle
+{
+width:75%;
+height:450px;
+margin:auto;
+padding:60px;
+margin-left:35px;
+
+}
+
+
+}
+@media only screen and (min-width:768px)
+{
+body{
+//background:pink;
+}
+.picstyle
+{
+width:75%;
+height:550px;
+margin:auto;
+padding:60px;
+margin-left:58px;
+
+}
+
+
+
+}
+@media only screen and (min-width:992px)
+{
+body
+{
+//background:cyan;
+}
+.picstyle 
+{
+width:51%;
+height:660px;
+margin:310px;
+margin-top:20px;
+border-radius:20px;
+}
+}
+</style>
+<body>
+<header>
+<a href="responsive gallery.html">
+<img src="images/close.png"width="3%">
+
+</header>
+<main>
+<a href="school.html">
+<img class="picstyle"src ="images/school.gif"Alt="school.gif image">
+</a>
+
+</main>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<title> web photo gallery </title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@keyframes zoomout 
+{
+from{transform:scale(3);}
+to{transform:scale(1);}
+} 
+
+header
+{
+width:75%;
+background: black;
+color:white;
+margin:auto;
+text-align: center;
+font-size:50px;
+//box-shadow:10px 10px 20px white;
+border:2px solid white;
+padding:20px;
+font-family:arial black;
+//text-shadow:5px 5px 10px cyan;
+
+}
+body
+{
+background:grey;
+background-image:url(images/texture.jpg);
+animation:zoomout 1.50s ;
+}
+//#card
+{
+background:yellow;
+width:20%;
+Height:150px;
+text-align:center;
+margin:5%;
+overflow:hidden;
+float:left;
+}
+.picstyle 
+{
+width:17%;
+height:260px;
+margin:120px;
+//box-shadow:5px 5px 10px white;
+border-radius:20px;
+transition:1s;
+}
+.picstyle:hover
+{
+//transform:scale(1.1) rotate(360deg);
+}
+h1
+{
+margin-top:-70px;
+margin-left:5px;
+}
+/* Extra small devices (phone, 600px and down)*/
+
+@media only screen and (max-width: 600px)
+{
+  body
+{ 
+//background:black;
+}
+
+header
+{
+
+font-size:25px;
+padding:5px;
+margin-top:30px;
+
+}
+main
+{ 
+text-align:center;
+}
+.picstyle
+{ 
+width:100%;
+height:100%;
+margin:10px;
+padding:2px;
+}
+#card
+{
+//background:cyan;
+width:30%;
+height:150px;
+margin:40px;
+float:left;
+}
+.picstyle:hover
+{
+width:90%;
+height:90%;
+}
+}
+
+/* Small devices(portait tablets and large phones, 600px and up)*/
+
+@media only screen and (min-width: 600px)
+{
+body
+{ 
+//background:yellow;
+}
+header
+{
+font-size:30px;
+margin-top:30px; 
+}
+.picstyle
+{
+width:100%;
+height:100%;
+margin:0px;
+padding:2px;
+
+}
+#card
+{
+//background:cyan;
+width:27%;
+height:200px;
+margin:80px;
+float:left;
+
+}
+.picstyle:hover
+{
+width:90%;
+height:90%;
+}
+
+main 
+{
+text-align:center;
+}
+}
+
+
+/* Medium devices (laptops/desktop, 768px and up)*/
+
+@media only screen and (min-width: 768px)
+
+{
+body{ 
+//background:green;
+}
+
+header
+{
+font-size:45px;
+margin-top:30px;
+}
+.picstyle
+{
+width:100%;
+height:100%;
+margin:0px;
+}
+#card
+{
+//background:cyan;
+width:19%;
+height:200px;
+margin:67px;
+float:left;
+
+}
+.picstyle:hover
+{
+width:90%;
+height:90%;
+}
+
+}
+
+
+/* large devices (laptops/desktop, 992px and up)*/
+
+@media only screen and (min-width: 992px)
+
+{
+body
+{ 
+//background:purple;
+}
+.picstyle 
+{
+width:100%;
+height:100%;
+}
+#card
+{
+//background:green;
+width:17%;
+height:230px;
+margin:60px;
+
+}
+header
+{
+margin-top:30px;
+}
+}
+</style>
+<body>
+<header> Photo gallery </header>
+<h1>
+<a href="practice.html">
+<img src="images/back.png" width="30px">
+</a>
+</h1>
+<main>
+<div id="card">
+<a href="headphone.html">
+<img class="picstyle"src ="images/headphone.jpg"Alt="headphone.jpg image">
+</a>
+</div>
+<div id="card">
+<a href="burger.html">
+<img class="picstyle"src ="images/burger.jpg"Alt="burger.jpg image">
+</a>
+</div>
+<div id="card">
+<a href="school.html">
+<img class="picstyle"src ="images/school.gif"Alt="school.gif image">
+</a>
+</div>
+<div id="card">
+<a href="dairymilk.html">
+<img class="picstyle"src ="images/dairymilk.jpg"Alt="dairymilk.jpg image">
+</a>
+</div>
+<div id="card">
+<a href="manipulation.html">
+<img class="picstyle"src ="images/manipulation.jpg"Alt="munipulation.jpg image">
+</a>
+</div>
+<div id="card">
+<a href="mountain.html">
+<img class="picstyle"src ="images/mountain.jpg"Alt="mountain.jpg image">
+</a>
+</div>
+
+
+</main>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
