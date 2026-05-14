@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+</head>
+<style>
+body
+{
+margin:0px;
+padding:0px;
+background:#00072d;
+}
+h6
+{
+text-align:center;
+}
+header
+{
+background:#fffff0;
+color:#00072d;
+text-align:center;
+height:50px;
+font-size:24px;
+padding:10px;
+box-sizing:border-box;
+}
+main
+{
+background:#fffff0;
+width:40%;
+margin:auto;
+margin-top:50px;
+height:650px;
+}
+caption
+{
+font-size:24px;
+font-family:arial black;
+}
+table
+{
+margin:auto;
+//background:teal;
+padding-top:25px;
+}
+input[type="text"],[type="data"],
+[type="file"],[type="email"],[type="password"]
+{
+
+padding:1px;
+margin-top:10px;
+width:90%;
+}
+input[type="submit"]
+{
+margin-left:200px;
+}
+date,select,datalist,Date of Birth
+{
+margin-top:10px;
+}
+label
+{
+font-family:roman times new;
+}
+input:required:invalid
+{
+//border-color:red;
+}
+input:required:valid
+{
+border-color:green;
+}
+
+@media only screen and (max-width:600px)
+{
+body
+{
+//background:gray;
+}
+caption
+{
+font-size:15px;
+}
+main
+{
+width:85%;
+}
+td
+{
+font-size:10px;
+}
+input[type="submit"]
+{
+margin-left:140px;
+}
+input[type="text"],[type="data"],
+[type="file"],[type="email"],[type="password"]
+{
+
+padding:1px;
+margin-top:10px;
+width:70%;
+}
+input[list="country"]
+{
+width:68%;
+}
+main
+{
+height:550px;
+}
+}
+</style>
+<header>
+Creating Form
+</header>
+<body>
+<h6>
+<a href="practice.html">
+<img src="images/back1.png"width="3%"></a></h6>
+    <main>
+<table border="0">
+<caption><u>Registration Form</u></caption>
+<form action="https://tataplay/user/login.com" method="get">
+<tr>
+<td><label for="uname"> First name</label></td>
+
+<td><label for="lastname">Last Name</label></td> 
+</tr>
+<tr>
+<td><input id="Uname" required type="text"  placeholder="Enter your name..." title="Type user Name here..." Pattern=[A-Za-z]{2,16}"></td>
+
+<td><input id="lastname" required type="text" placeholder="Enter your last name..." title="Type user last name...." pattern="[A-Za-z]{2,16}"></td>
+</tr>
+
+<tr>
+<td><label>Date of Birth<labal></td> 
+<td><label for="gender">Gender</label></td>
+</tr>
+<tr>
+<td><input type="date"></td>
+<td> 
+     <input id="gender" required type="radio" name="gender" value="male"> Male 
+     <input id="gender"  required type="radio" name="gender" value="female"> Female
+     <input id="gender" required type="radio" name="gender" value="other"> Other
+
+</tr>
+<tr>
+<td><lable for="city">City</label></td>
+<td><label for="country"> Country</label></td>
+</tr>
+<tr>
+<td> 
+<select>
+<option >--Select--</option>
+<option value="del">Delhi</option>
+<option value="Mum">Mumbai</option>
+<option value="Kol">Kolkata</option>
+<option value="Chennai">Chennai</option>
+<option value="beng">Bengaluru</option>
+<option value="hyderabad">hyderabad</option>
+<option value="ahmedabad">Ahmedabad</option>
+<option value="Jai">Jaipur</option>
+<option value="pun">Pune</option>
+<option value="lucknow">Lucknow</option>
+<option value="Kanpur">Kanpur</option>
+</select>
+</td>
+
+<td>
+<input list="country"> 
+<datalist id="country">
+<option > --Select--</option>
+<option value="India"></option>
+<option value="China"></option>
+<option value="Russia"></option>
+<option value="Japan"></option>
+<option value="Iran"></option>
+<option value="Korea"></option>
+<option value="Canada"></option>
+<option value="france"></option>
+<option value="Germany"></option>
+<option value="Italy"></option>
+<option value="Spain"></option>
+</datalist>
+</td>
+<tr>
+<td><label for="hobbies">Hobby</label></td>
+</tr>
+<tr>
+<td>
+<input type="checkbox" value="gaming">Gaming
+<input type="checkbox" value="sport">Sports
+<input type="checkbox" value="reading">Reading
+<input type="checkbox" value="painting">Painting
+</td>
+</tr>
+<tr>
+<td><label for="img">Upload Photo</label></td></tr>
+<tr>
+<td>
+<input type="file">
+</td>
+</tr>
+
+<tr>
+<td><label for="email">Email ID</label></td>
+</tr>
+<tr>
+<td><input required type="email" placeholder="Enter your email id here...">
+</tr>
+<tr>
+<td><label for="password">Password</label></td>
+<td><label for="confirm password">Confirm Password</label></td>
+</tr>
+<tr>
+<td><input required type="password" placeholder="Enter your password.." title="enter password here.." ></td> 
+<td><input required type="password" placeholder="Enter your password.." title="enter password here.." ></td> 
+</tr>
+
+
+<tr>
+<td><label for="message">Messsage</label></td></tr>
+<tr>
+<td><textarea rows="5" cols="30">Type text here</textarea></td>
+</tr>
+<tr>
+<td><input type="submit" value="login"><input type="reset"></td>
+</tr>
+</form>
+</table>
+</main>
+</body>
+</html>
