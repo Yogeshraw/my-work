@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movingbanner</title>
+</head>
+<style>
+@keyframes runbanner
+{
+10%{left:0px;}
+
+ 20%{left:-14.3%;}
+30%{left:-14.3%;}
+
+40%{left:-28.6%;}
+50%{left:-28.6%;}
+
+60%{left:-42.9%;}
+70%{left:-42.9%;}
+
+80%{left:-57.2%;}
+90%{left:-57.2%;}
+
+100%{left:-71.5%;}
+110%{left:-71.5%}
+}
+body
+{
+background:#fffff0;
+margin:0px;
+padding:0px;
+}
+header
+{
+background:#00072d;
+color:white;
+text-align:center;
+box-sizing:border-box;
+height:70px;
+font-size:30px;
+padding-top:15px;
+}
+h6
+{
+text-align:center;
+}
+h6 img
+{
+
+width:2%;
+margin-top:-20px;
+}
+main
+{
+width:700%;
+height:450px;
+//background:red;
+}
+.pic
+{
+width:14%;
+height:550px;
+//margin-left:-4px;
+position:relative;
+padding:15px;
+box-shadow:10px 10px 10px;
+animation:runbanner 20s infinite alternate ;
+}
+@media only screen and (max-width:600px)
+{
+header
+{
+height:40px;
+font-size:16px;
+padding-top:10px;
+}
+body
+{
+//background:red;
+}
+h6 img
+{
+
+width:5%;
+margin-top:-20px;
+}
+
+.pic
+{
+height:300px;
+width:13.4%;
+padding:14px;
+}
+}
+@media only screen and (min-width:601px)
+{
+body
+{
+//background:blue;
+}
+h6
+{
+text-align:center;
+}
+h6 img
+{
+
+width:5%;
+margin-top:-20px;
+}
+
+.pic
+{
+height:350px;
+width:13.6%;
+padding:13.6px;
+}
+}
+@media only screen and (min-width:992px)
+{
+h6
+{
+text-align:center;
+}
+h6 img
+{
+
+width:2%;
+margin-top:-20px;
+}
+
+.pic
+{
+width:14%;
+height:500px;
+//margin-left:-4px;
+position:relative;
+padding:14px;
+animation:runbanner 20s infinite alternate ;
+}
+
+}
+</style>
+<header>
+Runbanner
+</header>
+<body>
+<h6>
+<a href="practice.html">
+<img src="images/back1.png">
+</a>
+</h6>
+
+ <main>
+<section>
+<img src="images/m1.png"class="pic">
+
+<img src="images/m3.png"class="pic">
+<img src="images/m4.png"class="pic">
+<img src="images/m5.png"class="pic">
+<img src="images/m6.png"class="pic">
+<img src="images/m7.png"class="pic">
+</section>
+</main>
+</body>
+</html>
