@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //window.alert("hello")
+    //alert("you are in wrong page")
+</script>
+<style>
+    
+</style>
+<body>
+    <script>
+        document.bgColor="#00072d"
+        document.write("welcome to javascript")
+        document.fgColor="white"
+        document.write("<h1 style='font-size:45px;color:green'>TATA Company</h1>")
+        document.title="Using of java script"
+        //var username = prompt("Enter Your Name....")
+        //document.write("<h1>Hello.."+username+"</h1>")
+       var answer = prompt("Enter Color Name or Your favorite color to set background color...?","gray")
+         var answer2 = prompt("Text color....?","black")
+         document.bgColor = answer
+         document.fgColor = answer2
+         var useranswer = confirm("Want to close window..")
+         if(useranswer == true )
+         {
+            alert("window  will close")
+            close() 
+        }
+        else
+        {
+            ("window will not close....!")
+
+        }
+    </script>
+</body>
+</html>
