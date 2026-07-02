@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        margin: 0px;
+        padding:0px;
+    }
+    header
+    {
+        width:100%;
+        height:50px;
+        background:black;
+        color: white;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 10px;
+        font-size: 24px;
+    }
+    h1
+    {
+        text-align: center;
+    }
+    #pic
+    {
+        width:100px;
+        height:100px;
+        box-shadow: 10px 10px 10px gray;
+        margin-left:20px;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <header>Working on Javascript</header>
+    <img id ="pic"src="images/manipulation.jpg">
+    <h1>About Programing</h1>
+    <p>
+        "Hello! I'm Yogesh Rawat, a passionate Motion & Web Designer who believes static design is only half the story. I specialize in bringing brand narratives to life through seamless web interactions and engaging, kinetic motion graphics. I combine solid UI principles with After Effects to create immersive digital experiences that hold attention. I'm eager to bring my fresh perspective and technical skills to a creative team."
+    </p>
+    <script>
+        var p = document.getElementById("pic")
+        var h = document.getElementsByTagName("h1")
+        h[0].onmouseover = function()
+        {
+            this.style.color="red"
+            this.style.transition="0.90s"
+            this.style.cursor="pointer"
+            this.style.marginLeft="200px"
+            this.style.transform="scale(1.50)"
+        } 
+
+        h[0].onmouseout = function()
+        {
+            this.style.color="black"
+            this.style.transform="scale(1)"
+            this.style.marginLeft="0px"
+        }
+        p.onclick = function()
+        {
+            p.src="images/burger.jpg"
+        }
+        p.onmouseout = function()
+        {
+            p.src="images/manipulation.jpg"
+
+        }
+    </script>
+</body>
+</html>
