@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mystyle
+    {
+        color:black;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        cursor: pointer;
+        width: 200px;
+        box-shadow: 10px 10px 10px gray;
+        padding: 10px;
+        background:pink;
+    }
+</style>
+<div id ="mes" class="mystyle"></div>
+<body>
+    <script>
+        
+        var mes = document.getElementById("mes")
+        var d = new Date()
+        var today = d.getDay()
+         
+          document.title = today
+            //today = 6
+        if(today==1)
+            {
+                mes.innerHTML = "Monday"
+                     document.body.style.backgroundImage = "url('images/img2.jpg')"
+            }
+            if(today==2)
+            {
+                mes.innerHTML = "Tuesday"
+                     document.body.style.background = "violet"
+            }
+            if(today==3)
+            {
+                mes.innerHTML = "wednesday"
+                     document.body.style.background = "slateblue"
+            }
+            if(today==4)
+            {
+                mes.innerHTML = "Thursday"
+                     document.body.style.background = "dodgerblue"
+            }
+            if(today==5)
+            {
+                mes.innerHTML = "Friday"
+                     document.body.style.background = "mediumseagreen"
+            }
+            if(today==6)
+            {
+                mes.innerHTML = "Saturday"
+                     document.body.style.background = "pink"
+            }
+            if(today==0)
+            {
+                mes.innerHTML = "Sunday"
+                     document.body.style.backgroundImage = "url('images/img1.jpg')"
+            }
+            
+            
+    </script>
+</body>
+</html>
