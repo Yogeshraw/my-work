@@ -10,6 +10,7 @@
     {
         margin: 0;
         padding:0;
+        background:brown;
     }
     .mystyle
     {
@@ -39,6 +40,7 @@
      h4
      {
         margin-left: 10px;
+        text-align:left;
      }
      a :link
      {
@@ -47,57 +49,80 @@
      a:visited
      {
         color:black;
-        
-     }  
+     }
+     h1{
+        text-align: center;
+     }
+     h1 #pic
+     {
+      width: 70%;
+      height: 500px;
+      box-shadow: 10px 10px 10px black;
+     }
+     body{
+        text-align: center;
+     }
 </style>
 <header>Change background Days Wise</header>
 <h4><a href="javascript.html">Back</a></h4>
-<div id ="mes" class="mystyle"></div>
-<body>
+
+<h1><img id="pic" src ="images/bk2.jpg"></h1>
+<body onload="show()">
+
+    
     <script>
         
-        var mes = document.getElementById("mes")
-        var d = new Date()
-        var today = d.getDay()
+       var p1 = document.getElementById("pic")
+
+        
+        var today = 2
          
-          document.title = today
-            //today = 6
+         
+            if(today<7)
+            {
+                today++
+            }
+            else
+            {
+                today = 0            
+            }
+            document.title = today
+           
         if(today==1)
             {
-                mes.innerHTML = "Monday"
-                     document.body.style.backgroundImage = "url('images/img2.jpg')"
+                
+                  p1.src="images/banner.gif"
             }
             if(today==2)
             {
-                mes.innerHTML = "Tuesday"
-                     document.body.style.background = "violet"
+              
+                      p1.src="images/school.gif"
             }
             if(today==3)
             {
-                mes.innerHTML = "wednesday"
-                     document.body.style.background = "slateblue"
+                
+                      p1.src="https://cdn.pixabay.com/animation/2026/05/02/02/00/02-00-36-874_512.gif"
             }
             if(today==4)
             {
-                mes.innerHTML = "Thursday"
-                     document.body.style.background = "dodgerblue"
+              
+                     p1.src="https://cdn.pixabay.com/animation/2023/09/26/12/59/12-59-04-420_512.gif"
             }
             if(today==5)
             {
-                mes.innerHTML = "Friday"
-                     document.body.style.background = "mediumseagreen"
+                
+                      p1.src="https://cdn.pixabay.com/animation/2024/02/19/13/10/13-10-06-4_512.gif"
             }
             if(today==6)
             {
-                mes.innerHTML = "Saturday"
-                     document.body.style.background = "pink"
+                      p1.src="https://cdn.pixabay.com/animation/2023/01/22/12/01/12-01-10-410_512.gif"
             }
             if(today==0)
             {
-                mes.innerHTML = "Sunday"
-                     document.body.style.backgroundImage = "url('images/img1.jpg')"
+              
+                      p1.src="https://cdn.pixabay.com/animation/2024/01/10/14/45/14-45-54-336_512.gif"
             }
-            
+          
             
     </script>
 </body>

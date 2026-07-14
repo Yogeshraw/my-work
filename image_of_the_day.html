@@ -10,6 +10,7 @@
     {
         margin: 0;
         padding:0;
+        background:brown;
     }
     .mystyle
     {
@@ -39,6 +40,7 @@
      h4
      {
         margin-left: 10px;
+        text-align:left;
      }
      a :link
      {
@@ -47,55 +49,71 @@
      a:visited
      {
         color:black;
-        
-     }  
+     }
+     h1{
+        text-align: center;
+     }
+     h1 #pic
+     {
+      width: 70%;
+      height: 500px;
+      box-shadow: 10px 10px 10px black;
+     }
+     body{
+        text-align: center;
+     }
 </style>
-<header>Change background Days Wise</header>
+<header>Change Banner Days Wise</header>
 <h4><a href="javascript.html">Back</a></h4>
-<div id ="mes" class="mystyle"></div>
+
+<h1><img id="pic" src ="images/bk2.jpg"></h1>
 <body>
+    <div id ="mes" ></div>
     <script>
         
         var mes = document.getElementById("mes")
+
+        var p1 = document.getElementById("pic")
+
         var d = new Date()
         var today = d.getDay()
          
           document.title = today
-            //today = 6
+            //today = 0
         if(today==1)
             {
-                mes.innerHTML = "Monday"
-                     document.body.style.backgroundImage = "url('images/img2.jpg')"
+                mes.innerHTML = "Image of Monday"
+                  p1.src="images/bk1.jpg"
             }
             if(today==2)
             {
-                mes.innerHTML = "Tuesday"
-                     document.body.style.background = "violet"
+                mes.innerHTML = "Image of Tuesday"
+                      p1.src="images/bk2.jpg"
             }
             if(today==3)
             {
-                mes.innerHTML = "wednesday"
-                     document.body.style.background = "slateblue"
+                mes.innerHTML = "Image of wednesday"
+                      p1.src="images/mountain.jpg"
             }
             if(today==4)
             {
-                mes.innerHTML = "Thursday"
-                     document.body.style.background = "dodgerblue"
+                mes.innerHTML = "Image of Thursday"
+                     p1.src="images/manipulation.jpg"
             }
             if(today==5)
             {
-                mes.innerHTML = "Friday"
-                     document.body.style.background = "mediumseagreen"
+                mes.innerHTML = "Image of Friday"
+                      p1.src="images/m6.png"
             }
             if(today==6)
             {
-                mes.innerHTML = "Saturday"
-                     document.body.style.background = "pink"
+                mes.innerHTML = "Image of Saturday"
+                      p1.src="images/m5.png"
             }
             if(today==0)
             {
-                mes.innerHTML = "Sunday"
-                     document.body.style.backgroundImage = "url('images/img1.jpg')"
+                mes.innerHTML = "Image of Sunday"
+                      p1.src="images/m2.png"
             }
             
             
