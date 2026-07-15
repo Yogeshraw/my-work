@@ -75,9 +75,11 @@
        var p1 = document.getElementById("pic")
 
         
-        var today = 2
+        var today = 0
          
-         
+        function show()
+        {
+
             if(today<7)
             {
                 today++
@@ -122,8 +124,8 @@
               
                       p1.src="https://cdn.pixabay.com/animation/2024/01/10/14/45/14-45-54-336_512.gif"
             }
-          
-            
+         }
+              setInterval("show()",3000)
     </script>
 </body>
 
