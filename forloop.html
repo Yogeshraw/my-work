@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/bg5.jpg");
+           background-position: center;
+        text-align:center;
+    }
+    .pic
+    {
+        width:20%;
+        box-shadow: 5px 5px 20px gray;
+        transition: 0.50s;
+        cursor:all-scroll ;
+        margin:5%;
+    }
+    .pic:hover
+    {
+        animation:pulse;
+        animation-duration: 0.50s;
+    }
+    header
+    {
+        width: 100%;
+        height:60px;
+        box-sizing: border-box;
+        padding-top: 10px;
+        color:white;
+        font-size: 28px;
+        background:black;
+        //position: fixed;
+        margin:auto;
+    }
+</style>
+<header>
+    Photo gallery in Javascript
+</header>
+
+<body>
+    <h4><a href="javascript.html">Back</a></h4>
+    <script>
+
+    for(var i = 1;i<=7;i++)
+      {  
+        var p = document.createElement("img")
+        document.body.appendChild(p)
+        p.src="images/m"+i+".png"
+        p.className="pic"
+      }
+    </script>
+</body>
+</html>

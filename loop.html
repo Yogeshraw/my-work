@@ -9,39 +9,50 @@
     body
     {
         
-        background:black;
-        color: white;
+        background:url("images/bg4.jpg");
+       
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        background-attachment: fixed;
+        color: black;
         text-align: center;
         margin: 0;
         padding:0;
+        
        }
        header
        {
-        background:white;
-        color:black;
+        background:black;
+        color:white;
         height:40px;
         font-size: 24px;
         font-family: 'Times New Roman', Times, serif;
         box-sizing: border-box;
         padding-top: 5px;
        }
+       
 </style>
 <header> Creating loop</header>
 <h4><a href="javascript.html">Back</a></h4>
+
 <body>
     <script>
 
-        var n = prompt("Enter a Number to create A Table","2")
+      var n = prompt("Enter a Number to create A Table","2")
 
         document.write("<h1>Table of "+n+"</h1>")
 
         for(var i = 1;i<=10;i++)
             { 
-                document.write("<h3>"+n+"X"+i+"="+n*i+"</h3>")
+                document.write("<h3>"+n+"❌"+i+"="+n*i+"</h3>")
 
                }
                document.title ="no"
     </script>
+    
+
+
     
 </body>
 </html>
