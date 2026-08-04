@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+
+    }
+    h1
+    {
+        width:100%;
+        height:60px;
+        background:orange;
+        margin-top: -5px;
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+    .pic
+    {
+        width:20%;
+        box-shadow: 10px 10px 10px gray;
+        position: absolute;
+        left:230px;
+        top: 0px;
+        cursor: pointer;
+
+    }
+</style>
+<body>
+<h1> Using change Event</h1>
+ <h4><a href="javascript.html">Back</a></h4>
+<input type="color" id="mycolor">
+</br>
+<img src="images/m2.png" class="pic" id="pic">
+<input type="range"  value="10" max="100" min="10" id="slider">
+<p id="text">
+    3D animation, or computer animation, uses a series of computer-generated images that are shown quickly in succession and produce the illusion of movement. What is special about 3D animation is the ability to simulate real-life physics to represent volume and weight, making the object or character feel like it exists in three-dimensional space. 3D scenes can further be captured from several camera angles to more closely mimic real-world approaches to film-making. The basic process of creating a 3D animation can be divided into three major exercises: modeling, animation, and rendering. Modeling tasks include building and texturing the models and rigging the models for movement. Animation requires posing the models along keyframes to create motion, camera set up, and lighting design. Rendering is a process that generates frames between keyframes to produce continuous movement. Finally, the rendered frames are composited, and special effects, transitions, and sound are added.
+</p> 
+<script>
+    var c = document.getElementById("mycolor")
+    var s = document.getElementById("slider")
+    var t = document.getElementById("text")
+    var p = document.getElementById("pic")
+
+    s.onchange = function()
+    {
+    document.title = this.value
+    t.style.fontSize = this.value+"px"
+    }
+ 
+    c.onchange = function()
+    {
+        document.body.style.background =c.value
+    }
+    
+    function f1(e)
+    {
+        document.title = "x ="+e.pageX+" y= "+e.pageY
+        p.style.left = e.pageX-100+"px"
+        p.style.top= e.pageY-50+"px"
+    }
+    document.addEventListener("mousemove",f1)
+    
+    
+    </script>   
+</body>
+
+</html>
