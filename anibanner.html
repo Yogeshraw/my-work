@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: gray;
+    }
+    .pic
+    {
+     position: absolute;
+     top:0px;
+     left:350px;
+     width: 55%;
+     height: 400px;
+     transition:2s;
+    }
+</style>
+<body onload="anibanner()">
+    <header >
+        <img class="pic" src="images/burger.jpg" id="p1">
+         <img class="pic" src="images/manipulation.jpg" id="p2">
+          <img class="pic" src="images/mountain.jpg" id="p3">
+           <img class="pic" src="images/banner.gif" id="p4">
+            <img class="pic" src="images/dairymilk.jpg" id="p5">
+    </header>
+    <script>
+        var p1 = document.getElementById("p1")
+         var p2 = document.getElementById("p2")
+          var p3 = document.getElementById("p3")
+           var p4 = document.getElementById("p4")
+            var p5 = document.getElementById("p5")
+            var c = 0
+
+            function anibanner()
+            { 
+                switch(c)
+                {
+                case 1:
+                    p5.style.opacity= "0"
+                    p5.style.transform = "scale(0) rotate(360deg)"
+                    break;
+                    case 2:
+                    p4.style.opacity= "0"
+                    p4.style.transform = "scale(0) rotate(360deg)"
+                    break;
+                    case 3:
+                    p3.style.opacity= "0"
+                    p3.style.transform = "scale(0) rotate(360deg)"
+                    break;
+                    case 4:
+                    p2.style.opacity= "0"
+                    p2.style.transform = "scale(0) rotate(360deg)"
+                    break;
+                    case 5:
+                    p5.style.opacity= "1"
+                    p5.style.transform = "scale(1) rotate(0deg)"
+                    p4.style.opacity= "1"
+                    p4.style.transform = "scale(1) rotate(0deg)"
+                    p3.style.opacity= "1"
+                    p3.style.transform = "scale(1) rotate(0deg)"
+                    p2.style.opacity= "1"
+                    p2.style.transform = "scale(1) rotate(0deg)"
+                    break;
+                }
+                 if(c<=5)
+                 {
+                    c++
+                 }
+                 else
+                 {
+                    c=1
+                 }
+                 setTimeout("anibanner()",5000)
+
+
+                }
+
+    </script>
+</body>
+</html>
