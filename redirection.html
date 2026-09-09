@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0px;
+        margin:0px;
+        background-color: aquamarine;
+    }
+    header
+    {
+        background-color: bisque;
+        height:50px;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        padding-top:12px;
+    }
+    /*@keyframes mes
+    {
+        0%
+        {
+            transform: translate(0,0);
+             
+        }
+       
+        100%
+        {
+            transform: translate(1400px,0);
+           
+        }
+    }*/
+    #mes
+    {
+        background-color: rgb(28, 111, 84);
+        color: white;
+        height: 100px;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top:9px;
+        margin-top: 260px;
+        
+        
+    }
+   /* #mes h1
+    {
+        animation:mes infinite linear;
+        animation-duration: 6s;
+        animation-timing-function: ease-in-out;
+       
+      
+    }*/
+</style>
+<header>
+    Redirection in javascript
+</header>
+<body onload="sh()">
+    <div id="mes">
+    <h1 id="type" >Sorry this page is under maintainence .. Soon we will be available ... Please bear with us....</h1>
+     
+    </div>
+    
+   <script>
+    var m = document.getElementById("type")
+    function ani()
+    {
+        if (m.style.opacity=="0")
+    {
+        m.style.opacity ="1"
+    }
+    else
+    {
+        m.style.opacity="0"
+    }
+    setTimeout("ani()",1500)
+    }
+function sh()
+{
+    ani()
+}
+setInterval("location.href='index.html'",15000)
+   </script>
+</body>
+</html>
